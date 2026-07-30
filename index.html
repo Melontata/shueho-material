@@ -245,13 +245,15 @@ li { margin-bottom: 6px; font-size: 15px; }
   width: auto;
 }
 .reward-table td { padding: 16px; font-size: 15px; background: #fff; }
-.reward-table thead tr { display: table; width: 100%; table-layout: fixed; }
-.reward-table tbody tr { display: table; width: 100%; table-layout: fixed; }
+.reward-table table { width: 100%; }
 .reward-table .highlight-cell { white-space: nowrap; }
+.reward-table td,
+.reward-table th { white-space: nowrap; }
 .reward-table.platform-table th:first-child,
-.reward-table.platform-table td:first-child { width: 90px; }
+.reward-table.platform-table td:first-child { width: 1%; }
 .reward-table.platform-table th:last-child,
-.reward-table.platform-table td:last-child { width: auto; }
+.reward-table.platform-table td:last-child { width: 99%; }
+.reward-table tbody tr td:nth-child(2) { white-space: nowrap; }
 .reward-table .highlight-cell {
   font-weight: 700;
   color: var(--green-dark);
