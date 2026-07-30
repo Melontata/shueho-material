@@ -242,8 +242,15 @@ li { margin-bottom: 6px; font-size: 15px; }
   font-size: 14px;
   font-weight: 600;
   border-bottom: 2px solid var(--green);
+  width: auto;
 }
 .reward-table td { padding: 16px; font-size: 15px; background: #fff; }
+.reward-table th:first-child,
+.reward-table td:first-child { min-width: 90px; }
+.reward-table th:last-child,
+.reward-table td:last-child { width: 30%; }
+.reward-table thead tr { display: table; width: 100%; table-layout: fixed; }
+.reward-table tbody tr { display: table; width: 100%; table-layout: fixed; }
 .reward-table .highlight-cell {
   font-weight: 700;
   color: var(--green-dark);
@@ -549,7 +556,7 @@ footer {
 
     <div class="card" style="text-align:center;">
       <h3>Q3：怎么投稿</h3>
-      <p>投稿入口：<a href="https://f.kdocs.cn/g/h6M3MyXP/" target="_blank" rel="noopener" style="color:var(--green); text-decoration:none; border-bottom:1px solid var(--green);">https://f.kdocs.cn/g/h6M3MyXP/</a></p>
+      <p style="color:var(--text-muted);font-size:14px;margin-bottom:18px;">点击下方按钮，即可填写投稿内容</p>
       <a class="btn" href="https://f.kdocs.cn/g/h6M3MyXP/" target="_blank" rel="noopener">去投稿</a>
     </div>
   </section>
