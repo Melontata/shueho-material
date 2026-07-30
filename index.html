@@ -148,6 +148,40 @@ p {
 .card :last-child { margin-bottom: 0; }
 .card-red { border: 2px solid rgba(155,47,39,0.12); }
 
+/* Category card styles */
+.category-card {
+  position: relative;
+  border-radius: 18px;
+  padding: 28px 24px 28px 36px;
+  margin-bottom: 24px;
+}
+.category-dept {
+  background: #E8EFEA;
+  border-left: 6px solid var(--green-dark);
+}
+.category-general {
+  background: #FFF8E8;
+  border-left: 6px solid #E0B840;
+}
+.category-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.category-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+.category-tag-dept { background: var(--green-dark); color: #fff; }
+.category-tag-general { background: #C89820; color: #fff; }
+
 .intro-card {
   background: #fff;
   border-radius: 22px;
@@ -452,8 +486,9 @@ footer {
     <h2><span class="badge">一</span>要拍点啥</h2>
     <p class="lead section-lead">收集什么素材</p>
 
-    <div class="card">
-      <h3>🤓 部门向：我们最喜欢看幕后了！</h3>
+    <div class="card category-card category-dept">
+      <div class="category-tag category-tag-dept">🏢 部门向</div>
+      <h3>我们最喜欢看幕后了！</h3>
       <p>对应的岗位、部门，可以拍点什么，我们准备了一些参考 ✨</p>
 
       <h4>如果你离产品很近</h4>
@@ -493,8 +528,9 @@ footer {
       <p class="note">我们想看的不只是最终结果，还有它是怎样一步步走到现在的。</p>
     </div>
 
-    <div class="card">
-      <h3>🤓 通用向：总之想拍，觉得有意思</h3>
+    <div class="card category-card category-general">
+      <div class="category-tag category-tag-general">🌏 通用向</div>
+      <h3>总之想拍，觉得有意思</h3>
       <h4>如果你只是刚好看见了</h4>
       <p>这部分素材不分岗位。比如：</p>
       <ul>
